@@ -1,8 +1,21 @@
-var loader = document.getElementById("loader");
+// Sticky Navigation Menu
 
-window.addEventListener("load", function(){
-    loader.style.height="100px";
-    loader.style.width = "100px";
-    loader.style.borderRadius = "50%";
-    loader.style.visibility="hidden";
-})
+let nav = document.querySelector("nav");
+let scrollBtn = document.querySelector(".scroll-button a");
+
+let val;
+
+window.onscroll = function(){
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+        scrollBtn.style.display= "block";
+    }
+    else{
+        nav.classList.remove("sticky");
+        scrollBtn.style.display= "none";
+    }
+}
+
+
+
+
