@@ -20,6 +20,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 /*Custom Scroll Bar Css*/
 ::-webkit-scrollbar{
     width: 10px;
@@ -338,23 +340,7 @@ section .button button:hover{
 
 
 /*Portfolio*/
-/*.portfolio .box-container .box{
-    height: 30rem;
-    border-radius: .5rem;
-    overflow: hidden;
-    position: relative;
-}*/
 
-/*.portfolio .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-}*/
-
-/*.portfolio .box-container{ 
-    display: grid;
-    /*flex-wrap: wrap;*/
-   /* justify-content: space-around; */
 .portfolio{                                                                             /*JEDVA SAM OVO PRONAŠAO*/
     width: 80%;
     margin:40px auto;
@@ -379,6 +365,26 @@ section .button button:hover{
     border-radius: .7rem;
     overflow: hidden;
     position: relative;
+}
+.button-portfolio button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #005f73;
+    color:var(--white-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.6s ease;
+}
+.button-portfolio button{
+    margin: 14px 0;
+}
+.button-portfolio button:hover{
+    border-color: #005f73;
+    background-color: var(--white-color);
+    color: #005f73;
 }
 /*.portfolio .box-container .box{
     border-radius: .5rem;
@@ -520,7 +526,7 @@ label.fcf-label {
 }
 
 .fcf-credit a:hover {
-    color: #0056b3;
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -562,14 +568,13 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color:  #0069d9;
+
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color:var(--primary-color);
 }
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
@@ -638,4 +643,41 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 .footer-title{
     margin: 15px;
+}
+
+
+
+/*Responsive Media Queries*/
+@media (max-width:1190px){
+    section .content{
+        width: 85%;
+    }
+}
+@media (max-width:1000px){
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .adout .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-details .right{
+        width: 90%;
+        margin: 40px 0;
+    }
+    .services .boxes .box{
+        margin: 20px 0;
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media (max-width:900px){
+    .about .left .img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width:750px){
+    
 }
