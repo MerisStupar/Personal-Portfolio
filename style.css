@@ -46,6 +46,7 @@ nav{
     padding: 20px 0;
     z-index: 999;
     transition: all 0.3 ease;
+
 }
 
 nav.sticky{
@@ -65,25 +66,29 @@ nav .navbar .logo a{
     font-weight: 500;
     font-size: 35px;
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 nav.sticky .navbar .logo a{
-    color:var(w);
+    color:var(--white-color);
+    
 }
 
 nav .navbar .menu{
     display: flex;
     position: relative;
+   
 }
 
 nav .navbar .menu li{
     list-style: none;
     margin: 0 8px;
+    padding: 1.2rem;
 }
 
 nav .navbar .menu a{
-    font-size: 22px;
-    font-weight: 00;
+    font-size: 20px;
+    font-weight: 600;
     color:var(--black-color);
     padding: 6px 0;
     transition: all 0.5s ease;
@@ -567,13 +572,13 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color:  #0069d9;
+    background-color: var(--primary-color);
 
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color:var(--primary-color);
+    background-color:#498d6b;
 }
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
@@ -676,68 +681,161 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         height: 350px;
         width: 350px;
     }
-}
-@media (max-width:750px){
-    nav .navbar{
-        width: 90%;
-    }
-    nav .navbar .menu{
+    .media-icons{
         position: fixed;
-        left: -100%;
+        left: 48%;
+        z-index: 1;
+    }
+
+    nav .menu-btn{
+        position: absolute;
+        color: var(--primary-color);
+        right: 30px;
+        top: 20px;
+        font-size:20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        z-index: 2;
+    }
+    nav.sticky{
+        height: 60px;
+    }
+    nav.sticky .menu{
+        color: white;
+    }
+    .nav-menu{
+        position: fixed;
         top: 0;
-        background: var(--primary-color);
-        height: 100vh;
-        max-width: 400px;
-        width: 100%;
-        padding-top: 60px;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        background-color: #1b4332;
+        transition: 0.3s;
+        z-index: 2;
+    }
+    .nav-menu .menu{
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        transform: all 0.5s ease;
+        align-items: center; 
+        justify-content: center;
+        padding: 3rem 1rem;
+        padding-top: 6rem;
+    
     }
-    .navbar .active .menu{
-        left:0;
+    nav .navbar .menu a {
+        color: white;
     }
-    nav .navbar .menu a{
-        font-size: 23px;
-        display: block;
-        color:var(--white-color);
-        margin: 10px 0;
+    .show_menu{
+        right: 0;
     }
-    nav.sticky .menu a:hover{
-        color:(--primary-color);
+
+    .portfolio .box-container .box .content h3{
+        font-size: 2.2rem;
     }
-    nav .navbar .media-icons{
-        display: none;
+    .portfolio .box-container .box span{
+        font-size: 2rem;
     }
-    nav .menu-btn,
-    .navbar .menu .cancel-btn{
-        display: block;
+    .portfolio .box-container .box{
+        height: 190px;
+    }
+    .button-portfolio button {
+        height: 30px;
+        font-size: 0.5rem;
+    }
+
+
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+    .form .fcf-body{
+        width: 100%;
+    }
+}
+@media (max-width:480px){
+    .home{
+        background: none;
     }
     .home .text-two{
-        font-size: 65px;
+        font-size: 60px;
     }
-    .home .text-three{
-        font-size: 35px;
-    }
-    .skills .skills-details{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .skills-details .text{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .skills-details .boxes{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .services .boxes .box{
-        margin: 20px;
-        width: 100%;
-    }
-    .content .text{
-        width: 100%;
-    }
+    nav .menu-btn{
+    position: absolute;
+    color: var(--white-color);
+    right: 30px;
+    top: 20px;
+    font-size:20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+}
+.navbar .logo{
+    position: fixed;
+    top: 10px;
+}
+nav .menu-btn{
+    color: var(--primary-color);
+}
+nav.sticky .menu-btn{
+    color:var(--white-color);
+}
+.navbar .menu .menu-btn{
+    color:var(--white-color);
+}
+.media-icons{
+    display: none;
+}
+
+.about .about-details .left{
+    width: 70%;
+}
+.about .left img{
+    width: 100%;
+}
+.about-details .right p{
+    text-align: center;
+}
+.about .about-details .right{
+    text-align: center;
+    width: 100%;
+}
+
+
+section {
+    padding-top: 0;
+}
+section .topic{
+    text-align: center;
+}
+.skills .skills-details{
+    flex-direction: column;
+
+}
+.skills-details p{
+    width: 80%;
+    text-align: center;
+}
+.skills-details .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-details .boxes{
+    width: 70%;
+}
+
+.portfolio .box-container{
+    grid-template-columns: 1fr;
+    grid-gap: 10px 1em;
+}
+
+.form {
+    width: 80%;
+    margin: auto;
+}
+.form .fcf-body{
+    width: 100%;
+}
 }
