@@ -29,3 +29,62 @@ for(let menu of navMenu){
         showMenu.classList.toggle('show_menu');
     }) 
 }
+
+//Scroll reveal
+window.sr = ScrollReveal();
+
+sr.reveal(".box",{ //Projects
+    origin: 'righ',
+    interval: 106,
+    duration: 2000,
+    distance: '150%'
+});
+sr.reveal(".button",{ //Buttons
+    origin: 'top',
+    duration: 1500,
+    distance: '150%',
+    scale: 1.5
+});
+
+sr.reveal(".title",{ //Titles on pages
+    origin: 'top',
+    duration: 1500,
+    distance: '150%',
+    scale: 1.5
+});
+
+sr.reveal(".form",{
+    origin: 'right',
+    duration: 1500,
+    distance: '150%',
+});
+
+sr.reveal(".imageAboutMe",{
+    origin: 'left',
+    duration: 1500,
+    distance: '150%',
+});
+
+sr.reveal(".topic",{
+    easing: 'ease-in',
+    duration: 1500,
+    distance: '150%',
+});
+sr.reveal(".paragraph",{
+    easing: 'ease-in',
+    duration: 1500,
+    distance: '150%',
+});
+sr.reveal(".topicTwo",{
+    easing: 'ease-in',
+    duration: 1500,
+    distance: '150%',
+});
+sr.reveal(".nav-logo",{
+    easing: 'ease-out',
+    duration: 1000,
+    distance: '150%',
+    scale: 1.5
+});
+
+
