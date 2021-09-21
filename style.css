@@ -9,6 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    
 }
 
 :root{
@@ -16,14 +17,7 @@
     --black-color: #0e2431;
     --white-color: white; 
 }
-body, html {
-    overflow-x: hidden;
-  }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-}
 
 
 
@@ -151,6 +145,7 @@ nav.sticky .menu-btn{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    z-index: -1;
 }
 
 .home .home-content{
@@ -160,6 +155,7 @@ nav.sticky .menu-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .home .text-one{

@@ -11,11 +11,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
-   
-    
-    
     <!--Navigation Menu-->
     <nav class="nav">
         <div class="hamburger" id="hamburger">
@@ -230,7 +226,7 @@
     </section>  
     
     <!--Contact Form-->
-    <section class="form" id="form">
+    <section class="form" id="form" action="POST" data-netlify="true">
         <div class="slika-div">
         
         </div>
@@ -257,6 +253,9 @@
                     <div class="fcf-input-group">
                         <textarea id="Message"  name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                     </div>
+                </div>
+                <div class="filed">
+                   <div data-netlify-recaptcha="true"></div>
                 </div>
         
                 <div class="fcf-form-group">
