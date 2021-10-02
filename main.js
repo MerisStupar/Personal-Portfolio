@@ -35,7 +35,7 @@ window.sr = ScrollReveal();
 ScrollReveal().version;
 
 sr.reveal(".box",{ //Projects
-    origin: 'right',
+    origin: 'top',
     interval: 106,
     duration: 2000,
     distance: '150%',    
@@ -45,42 +45,40 @@ sr.reveal(".button",{ //Buttons
     origin: 'top',
     duration: 1500,
     distance: '150%',
-    scale: 1.5,  
 });
 
 sr.reveal(".title",{ //Titles on pages
     origin: 'top',
     duration: 1500,
     distance: '150%',
-   scale: 1.5,  
 });
 
 sr.reveal(".form",{
-    origin: 'right',
+    origin: 'top',
     duration: 1500,
     distance: '150%',
 });
 
 sr.reveal(".imageAboutMe",{
-    origin: 'left',
+    origin: 'top',
     duration: 1500,
     distance: '150%',   
 });
 
 sr.reveal(".topic",{
-    easing: 'ease-in',
+    easing: 'top',
     duration: 1500,
     distance: '150%', 
 });
 
 sr.reveal(".paragraph",{
-    easing: 'ease-in',
+    easing: 'top',
     duration: 1500,
     distance: '150%',   
 });
 
 sr.reveal(".topicTwo",{
-    easing: 'ease-in',
+    easing: 'top',
     duration: 1500,
     distance: '150%',
 });
